@@ -1,0 +1,38 @@
+languageCode: en-us
+title: doprz
+theme: ["PaperMod"]
+
+params:
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+
+  profileMode:
+    enabled: true
+    # title: "Home" # optional default will be site title
+    subtitle: "\"Real power users modify the source code instead of using settings\" - doprz"
+    imageUrl: "https://avatars.githubusercontent.com/u/52579214"
+    imageTitle: "doprz' github avatar"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Blog
+        url: "/blog"
+      - name: Archive
+        url: "/archives"
+
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/doprz/"
+
+outputs:
+  home:
+  - html
+  - rss
+  - json
+  section:
+  - html
+  - rss
