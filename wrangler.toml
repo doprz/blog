@@ -1,0 +1,13 @@
+name = "blog"
+compatibility_date = "2026-03-25"
+
+[build]
+command = "hugo --gc --minify --baseURL 'https://doprz.dev/'"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
+
+[[routes]]
+pattern = "doprz.dev"
+custom_domain = true

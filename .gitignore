@@ -18,3 +18,8 @@ result-*
 
 # Ignore automatically generated direnv output
 .direnv
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
